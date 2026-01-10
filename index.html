@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Farmer Help System</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,12 +16,10 @@
 
     <select id="crop">
         <option value="">-- Select Crop --</option>
-
         <option value="rice">Rice</option>
         <option value="cotton">Cotton</option>
         <option value="maize">Maize</option>
         <option value="wheat">Wheat</option>
-
         <option value="sugarcane">Sugarcane</option>
         <option value="groundnut">Groundnut</option>
         <option value="sunflower">Sunflower</option>
@@ -43,8 +42,10 @@
     </select>
 
     <br><br>
-    <button onclick="showCropInfo()">Show Crop Info</button>
+    <!-- 🔧 FIX: type="button" add chesam -->
+    <button type="button" onclick="showCropInfo()">Show Crop Info</button>
 
+    <!-- 🔧 RESULT ID CORRECT -->
     <p id="cropResult"></p>
 </div>
 
@@ -61,7 +62,7 @@
     </select>
 
     <br><br>
-    <button onclick="showFertilizer()">Get Fertilizer</button>
+    <button type="button" onclick="showFertilizer()">Get Fertilizer</button>
 
     <p id="fertResult"></p>
 </div>
@@ -79,12 +80,12 @@
     </select>
 
     <br><br>
-    <button onclick="showWeatherTip()">Get Tip</button>
+    <button type="button" onclick="showWeatherTip()">Get Tip</button>
 
     <p id="weatherResult"></p>
 </div>
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- ================= JAVASCRIPT (MUST BE LAST) ================= -->
 <script src="script.js"></script>
 
 </body>
