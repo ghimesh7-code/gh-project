@@ -1,33 +1,74 @@
+/* ===== BASIC PAGE STYLE ===== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8f0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef7ee;
     margin: 0;
     padding: 20px;
 }
 
+/* ===== MAIN TITLE ===== */
 h1 {
     text-align: center;
-    color: green;
+    color: #1b5e20;
+    margin-bottom: 30px;
 }
 
+/* ===== CARD DESIGN ===== */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
-    margin: 15px auto;
-    width: 60%;
+    margin: 20px auto;
+    width: 70%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* ===== HEADINGS ===== */
+.card h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* ===== DROPDOWN ===== */
+select {
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+}
+
+/* ===== BUTTON ===== */
 button {
-    background-color: green;
+    background-color: #2e7d32;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 18px;
     border: none;
     border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: #1b5e20;
 }
+
+/* ===== RESULT TEXT ===== */
+p {
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
+
