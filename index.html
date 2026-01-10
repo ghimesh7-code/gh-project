@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Help System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌾 Farmer Help System</h1>
+
+<!-- ================= CROP INFORMATION ================= -->
+<div class="card">
+    <h2>Crop Information</h2>
+
+    <select id="crop">
+        <option value="">-- Select Crop --</option>
+        <option value="rice">Rice</option>
+        <option value="cotton">Cotton</option>
+        <option value="maize">Maize</option>
+    </select>
+    <br><br>
+
+    <button onclick="showCropInfo()">Show Info</button>
+
+    <p id="result"></p>
+</div>
+
+<!-- ================= FERTILIZER SUGGESTION ================= -->
+<div class="card">
+    <h2>Fertilizer Suggestion</h2>
+
+    <select id="fertCrop">
+        <option value="">-- Select Crop --</option>
+        <option value="rice">Rice</option>
+        <option value="cotton">Cotton</option>
+        <option value="maize">Maize</option>
+    </select>
+    <br><br>
+
+    <button onclick="showFertilizer()">Get Fertilizer</button>
+
+    <p id="fertResult"></p>
+</div>
+
+<!-- ================= WEATHER BASED TIPS ================= -->
+<div class="card">
+    <h2>Weather Based Tips</h2>
+
+    <select id="weather">
+        <option value="">-- Select Weather --</option>
+        <option value="rainy">Rainy</option>
+        <option value="sunny">Sunny</option>
+        <option value="cold">Cold</option>
+    </select>
+    <br><br>
+
+    <button onclick="showWeatherTip()">Get Tip</button>
+
+    <p id="weatherResult"></p>
+</div>
+
+<!-- ================= JAVASCRIPT FILE ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
