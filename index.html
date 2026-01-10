@@ -15,15 +15,37 @@
 
     <select id="crop">
         <option value="">-- Select Crop --</option>
+
         <option value="rice">Rice</option>
         <option value="cotton">Cotton</option>
         <option value="maize">Maize</option>
+        <option value="wheat">Wheat</option>
+
+        <option value="sugarcane">Sugarcane</option>
+        <option value="groundnut">Groundnut</option>
+        <option value="sunflower">Sunflower</option>
+        <option value="soybean">Soybean</option>
+        <option value="chili">Chili</option>
+        <option value="tomato">Tomato</option>
+        <option value="potato">Potato</option>
+        <option value="onion">Onion</option>
+        <option value="banana">Banana</option>
+        <option value="mango">Mango</option>
+        <option value="pulses">Pulses</option>
+        <option value="jowar">Jowar</option>
+        <option value="bajra">Bajra</option>
+        <option value="ragi">Ragi</option>
+        <option value="cabbage">Cabbage</option>
+        <option value="cauliflower">Cauliflower</option>
+        <option value="brinjal">Brinjal</option>
+        <option value="cucumber">Cucumber</option>
+        <option value="watermelon">Watermelon</option>
     </select>
+
     <br><br>
+    <button onclick="showCropInfo()">Show Crop Info</button>
 
-    <button onclick="showCropInfo()">Show Info</button>
-
-    <p id="result"></p>
+    <p id="cropResult"></p>
 </div>
 
 <!-- ================= FERTILIZER SUGGESTION ================= -->
@@ -35,9 +57,10 @@
         <option value="rice">Rice</option>
         <option value="cotton">Cotton</option>
         <option value="maize">Maize</option>
+        <option value="wheat">Wheat</option>
     </select>
-    <br><br>
 
+    <br><br>
     <button onclick="showFertilizer()">Get Fertilizer</button>
 
     <p id="fertResult"></p>
@@ -52,16 +75,19 @@
         <option value="rainy">Rainy</option>
         <option value="sunny">Sunny</option>
         <option value="cold">Cold</option>
+        <option value="windy">Windy</option>
     </select>
-    <br><br>
 
+    <br><br>
     <button onclick="showWeatherTip()">Get Tip</button>
 
     <p id="weatherResult"></p>
 </div>
 
-<!-- ================= JAVASCRIPT FILE ================= -->
+<!-- ================= JAVASCRIPT ================= -->
 <script src="script.js"></script>
 
 </body>
 </html>
+
+
